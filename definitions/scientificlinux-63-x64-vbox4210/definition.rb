@@ -26,11 +26,11 @@ Veewee::Session.declare({
   :shutdown_cmd => "/sbin/halt -h -p",
   :postinstall_files => [
     "base.sh",
+    "ruby.sh",
     "puppet.sh",
     "chef.sh",
     "vagrant.sh",
     "virtualbox.sh",
-    "ruby.sh",
     "cleanup.sh"
   ],
   :postinstall_timeout => 10000
