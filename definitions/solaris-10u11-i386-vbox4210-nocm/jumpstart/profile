@@ -7,10 +7,7 @@
 #
 install_type	initial_install
 system_type	  standalone
-partitioning	explicit
-filesys       c2t0d0s0 4000 /
-filesys       c2t0d0s1 1024 swap
-filesys       c2t0d0s7 free /export/home
+pool rpool auto auto auto any
 cluster		    SUNWCreq
 
 # Additional packages to allow vagrant installation (SSH) or convenient (bash, man)
